@@ -1,0 +1,110 @@
+body {
+  background-color: rgb(229, 231, 233);
+}
+
+.container {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10vh;
+  background-color: white;
+  color: rgb(46, 45, 45);
+  box-shadow: 2px 2px 3px gray;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.input-form {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: 0 auto;
+}
+
+.input-form input {
+  width: 80%;
+  border-radius: 10px;
+  border: 2px solid rgb(69, 94, 139);
+  padding: 0.3em;
+}
+
+.btn {
+  border: transparent;
+  background-color: transparent;
+  border: 2px solid rgb(102, 102, 167);
+  width: 17%;
+  background-color: rgb(133, 155, 196);
+  border-radius: 10px;
+  padding: 0.3em;
+}
+
+.btn:hover {
+  background-color: cornflowerblue;
+}
+
+.list-container {
+  border: 1px solid white;
+  margin-top: 2.5rem;
+}
+
+.item-container {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  /* border: 1px solid gray; */
+  box-shadow: 0px 0px 3px gray;
+  padding: 0.5em;
+}
+
+.item-container p {
+  /* border: 1px solid red; */
+  margin: 0;
+  font-weight: 500;
+}
+
+.delete-btn {
+  /* border: 1px solid red; */
+  margin-top: 4px;
+  color: rgb(219, 55, 55);
+}
+
+.delete-btn:hover {
+  color: rgb(255, 2, 2);
+  transform: scale(1.2);
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(228, 225, 225, 0.7);
+  /* display: none; */
+}
+
+.popup-message {
+  background-color: white;
+  color: rgb(51, 51, 51);
+  max-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40vh;
+  padding: 1.3rem;
+  box-shadow: 3px 3px 7px gray;
+}
+
+.empty-msg {
+  text-align: center;
+  color: rgb(121, 15, 15);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}

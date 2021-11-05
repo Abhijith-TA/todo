@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import SingleItem from "./singleItem";
 import PopUp from "./popup";
 import useDeleteBtn from "../customHooks/useDeleteBtn";

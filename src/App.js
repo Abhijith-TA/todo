@@ -1,7 +1,7 @@
 import './App.css';
 import React, {useState} from 'react';
-import Form from './form';
-import List from './list';
+import Form from './components/form';
+import List from './components/list';
 
 const App = ()=> {
   const [refId,setRefId]=useState(1);

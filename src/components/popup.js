@@ -1,12 +1,9 @@
 import React from "react";
+import useDelete from "../customHooks/useDelete";
 
 const PopUp = ({setDeleteFlag,deleteId,deleteTask,tasks,setTasks})=> {
 
-    const handleDelete = ()=> {
-        const newList=tasks.filter((item)=>item.id!==deleteId);
-        setTasks(newList);
-        setDeleteFlag(false);
-    }
+    const { handleDelete } =useDelete(tasks,setTasks,setDeleteFlag,deleteId);
 
     return(
         <div className="popup-container">

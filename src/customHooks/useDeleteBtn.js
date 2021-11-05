@@ -14,7 +14,8 @@ const useDeleteBtn = ()=> {
     return{handleDelete,
         setDeleteFlag,
         deleteId,
-        deleteTask
+        deleteTask,
+        deleteFlag
     }
 }
 

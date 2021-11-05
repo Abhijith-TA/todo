@@ -1,18 +1,15 @@
 import React, {useState} from "react";
 import SingleItem from "./singleItem";
 import PopUp from "./popup";
+import useDeleteBtn from "../customHooks/useDeleteBtn";
 
 const List = ({tasks,setTasks})=>{
 
-    const [deleteFlag,setDeleteFlag]=useState(false);
-    const [deleteId,setDeleteId]=useState();
-    const [deleteTask,setDeleteTask]=useState('');
-
-    const handleDelete = (id,task)=>{
-        setDeleteFlag(true);
-        setDeleteId(id);
-        setDeleteTask(task);
-    }
+    const {handleDelete,
+        setDeleteFlag,
+        deleteId,
+        deleteTask,
+        deleteFlag}=useDeleteBtn();
 
     if(tasks.length===0){
         return(

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { useHistory } from 'react-router';
 
 const admin = {
+    name:"Abhi",
     email:"admin@gmail.com",
     password:"admin123"
 }
@@ -19,7 +20,7 @@ function SignIn() {
             console.log("loged in")
             setPassword('');
             setEmail('');
-            history.push("/admin");
+            history.push(`/admin/${admin.name}`);
         }
         else{
             console.log("login failed")

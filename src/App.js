@@ -28,7 +28,7 @@ const App = ()=> {
         <Route path='/sign-in'>
           <SignIn/>
         </Route>
-        <Route path='/admin'>
+        <Route path='/admin/:name'>
           <AdminPage/>
         </Route>
       </Switch>

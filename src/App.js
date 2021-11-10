@@ -1,20 +1,11 @@
 import './App.css';
 import React, {useState} from 'react';
-import Form from './components/form';
-import List from './components/list';
+import Todo from './todo/components/todo'
 
 const App = ()=> {
-  const [refId,setRefId]=useState(1);
-  const [tasks,setTasks]=useState([]);
-
+  
   return (
-    <div>
-      <div className="container">
-        <h1>Todo List</h1>
-        <Form refId={refId} setRefId={setRefId} tasks={tasks} setTasks={setTasks}/>
-        <List tasks={tasks} setTasks={setTasks}/>
-      </div>
-    </div>
+    <Todo />
   );
 }
 

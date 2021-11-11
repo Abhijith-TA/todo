@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 button {
@@ -100,12 +101,6 @@ input {
   text-align: center;
 }
 
-.admin {
-  height: 75vh;
-  width: 90%;
-  margin: 0 auto;
-}
-
 .slide-container {
   /* border: 1px solid red; */
   width: 100%;
@@ -156,4 +151,16 @@ input {
   top: 40%;
   font-size: 4rem;
   color: rgb(29, 28, 28);
+}
+
+.admin {
+  height: 75vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.sidebar {
+  border: 1px solid red;
+  width: 15rem;
 }

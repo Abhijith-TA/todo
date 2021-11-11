@@ -112,6 +112,7 @@ input {
 .slide {
   /* border: 1px solid red; */
   /* background-color: gray; */
+  color: rgb(27, 26, 26);
   width: 100%;
   height: 70vh;
   display: flex;
@@ -156,11 +157,59 @@ input {
 .admin {
   height: 75vh;
   width: 100%;
-  margin: 0 auto;
   display: flex;
+  transition: all 0.3s linear;
+  /* transform: translate(-15rem); */
+}
+
+.hide-sidebar {
+  transform: translate(-15rem);
 }
 
 .sidebar {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 15rem;
+  text-align: left;
+  margin-right: 2rem;
+  padding-top: 2em;
+  background-color: rgb(187, 184, 184);
+  border: 2px solid gray;
+  position: relative;
+}
+
+.sidebar-link {
+  color: rgb(45, 40, 71);
+  font-weight: 700;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  /* border: 1px solid red; */
+}
+
+.sidebar-link:hover {
+  background-color: rgb(136, 156, 218);
+  color: white;
+}
+
+.sidebar-close-btn {
+  color: red;
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 1.7rem;
+}
+
+.sidebar-close-btn:hover {
+  transform: scale(1.3);
+}
+
+.menu-btn {
+  margin-right: 2rem;
+  margin-top: 5px;
+  font-size: 2rem;
+  display: none;
+}
+
+.show-menu-btn {
+  display: block;
 }

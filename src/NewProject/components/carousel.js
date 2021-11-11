@@ -11,11 +11,17 @@ function Carousel() {
         if(index<2){
             setIndex(index+1);
         }
+        else{
+            setIndex(0);
+        }
     }
 
     const decrementIndex = ()=>{
         if(index>0){
             setIndex(index-1);
+        }
+        else{
+            setIndex(2);
         }
     }
 

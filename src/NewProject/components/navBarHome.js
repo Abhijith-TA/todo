@@ -4,15 +4,7 @@ import { Link } from 'react-router-dom'
 
 function NavBar() {
 
-  let flag=null;
-  if(localStorage.getItem('loginFlag')){
-    flag=localStorage.getItem('loginFlag');
-  }
-  else{
-    flag = false;
-  }
-
-  const [signInFlag,setSignInFlag] =useState(flag);
+  const [signInFlag,setSignInFlag] =useState(false);
 
     return (
         <nav className='nav-bar'>

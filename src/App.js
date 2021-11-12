@@ -28,12 +28,13 @@ const App = ()=> {
         <Route path='/sign-in'>
           <SignIn/>
         </Route>
-        <Route path='/admin/:name'>
+        <Route path='/admin'>
           <AdminPage/>
         </Route>
       </Switch>
+      <Footer />
     </Router>
-    <Footer />
+    
      </>
   );
 }

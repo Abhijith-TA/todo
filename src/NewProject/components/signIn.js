@@ -19,13 +19,11 @@ function SignIn() {
             setPassword('');
             setEmail('');
             localStorage.setItem('loginFlag',true);
-            history.push(`/admin/${admin.name}`);
+            history.push(`/admin`);
         }
         else{
             console.log("login failed")
             setAlertFlag(true);
-            setPassword('');
-            setEmail('');
         }
     }
     
